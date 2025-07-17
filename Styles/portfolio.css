@@ -1,3 +1,14 @@
+@media screen and (min-width: 576px) {
+    .body{
+       
+
+    }
+    
+}
+.hide{
+    display: none;
+}
+
 .open-sans-normal {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -5,7 +16,7 @@
   font-variation-settings:
     "wdth" 100;
 }
-/* sahred style */
+/* shahred style */
 .secondary-bg{
     background-color: #ffefcc;
 }
@@ -50,7 +61,8 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 50px 200px;
+    margin: 0px 200px;
+    
 }
 .nav-title{
     font-weight: 800;
@@ -115,7 +127,7 @@ main section{
     font-size: larger;
     font-style: italic;
 }
-/* skilkl section */
+/* skil section */
 
 .skills-container{
     display: flex;
@@ -130,9 +142,7 @@ main section{
    
 }
 /* section resume */
-.resume{
- 
-}
+
 .resume-container{
 
     display: flex;
@@ -148,9 +158,6 @@ main section{
 }
 .experience-description, .experience-sub-title{
     color: #3b3a3a;
-}
-.resume-donwload-cv{
-    margin: 50px;
 }
 /* fotter section */
 footer{
@@ -173,4 +180,22 @@ footer input[type="text"], footer input[type="email"], footer textarea
     margin-bottom: 24px;
     border: none;
 
+}
+@media screen and (max-width:700px) {
+    .skills-container, 
+    .resume-container,
+    footer,
+    .about-items{
+        flex-direction: column;
+    }
+    footer{
+        padding: 20px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    footer input[type="text"], footer input[type="email"], footer textarea
+    {
+        width: calc(100% - 40px);
+    }
 }
